@@ -99,6 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#018e49', end
 	color:#aeaeae;
 	padding:5px;
 	transition:box-shadow 1s;
+	outline:none;
 	}
 p {
 	font-family:Arial, Helvetica, sans-serif;
