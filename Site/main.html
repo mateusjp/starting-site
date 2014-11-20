@@ -6,37 +6,41 @@
 </head>
 
 <style>
+iframe[scrolling='no']{
+overflow: hidden;
+}
+
 #superior{
 position: absolute;
 top: 0;
-left: 31%;
-height: 30%;
-width: 69%;
+left: 330px;
+height: 154px;
+width: 950px;
 border: 0;
 }
 #lateral{
 position: absolute;
 top: 0;
 left: 0;
-height: 100%;
-width: 31%;
+height: 700px;
+width: 330px;
 border: 0;
 }
 #conteudo{
 position: absolute;
-top: 30%;
-left: 31%;
+top: 154px;
+left: 330px;
 border: 0;
-height: 70%;
-width: 69%;
+height: 546px;
+width: 950px;
 }
 </style>
 
 <body>
 
-<iframe id="conteudo" name="conteudo" src="placeholder.html"></iframe>
-<iframe id="superior" name="superior" src="menu-superior.html"></iframe>
-<iframe id="lateral" name="lateral" src="menu-lateral.html"></iframe>
+<iframe id="conteudo" name="conteudo" src="placeholder.html" scrolling='no'></iframe>
+<iframe id="superior" name="superior" src="menu-superior.html" scrolling='no'></iframe>
+<iframe id="lateral" name="lateral" src="menu-lateral.html" scrolling='no'></iframe>
 
 </body>
 
