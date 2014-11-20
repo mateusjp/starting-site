@@ -1,4 +1,9 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+body{
+	background-color:#063;
+	}
 /* Regras do menu superior do jogo*/
 
 div#ms{
@@ -7,9 +12,10 @@ div#ms{
 	background-color:#fff;
 	border-radius:20px;
 	box-shadow:0px 2px 3px rgba(0,0,0,0.5);
+	margin-top:100px;
 	}
 nav#menu-ms ul li{
-	display:inline-block;
+		display:inline-block;
 		margin-top:16;
 	}
 nav#menu-ms ul li a{
@@ -17,14 +23,19 @@ nav#menu-ms ul li a{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	font-weight:bolder;
-	color:#449a70;
-	padding:16px 35px 16px 35px;
+	color:#CCC;
+	padding:0px 35px 0px 35px;
+	transition:color 0.5s;
+	transition:text-shadow 0.5s;
 	}
 nav#menu-ms ul li a:hover{
-	background-color:#449a70;
-	color:#FFF;
+	text-shadow:1px 1px 3px rgba(153,153,153,0.5);
+	color:#449a70;
 	}
-
+figure img#icone{
+		position:absolute;
+		margin:-90px 0px 0px 730px;
+	}
 /* Regras do menu lateral do jogo*/
 div#ml{
 	height:auto;
@@ -32,5 +43,68 @@ div#ml{
 	background-color:#fff;
 	border-radius:20px;
 	box-shadow:0px 2px 3px rgba(0,0,0,0.5);
+	padding-top:30px;
+	margin-top:100px;
 	}
+figure#carregar-foto{
+		width:180px;
+		height:180px;
+		box-shadow:1px 1px 4px #000;
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+	}
+figure#carregar-foto figcaption{
+			opacity:0;
+			position:absolute;
+			top:0px;
+			background-color:rgba(0,0,0,0.4);
+			color:#FFF;
+			width:181px;
+			height:181px;
+			padding:10px;
+			box-sizing:border-box;
+			transition:opacity 1s;
+	}
+figure#carregar-foto:hover figcaption{
+			opacity:1;
+	}
+figure#carregar-foto figcaption a{
+			text-decoration:none;
+			color:#fff;
+			font-weight:bold;
+			font-family:Arial, Helvetica, sans-serif;
+	}
+nav#menu-ml{
+			padding-bottom:15px;
+	}
+nav#menu-ml ul li{
+			margin-left:30px;
+			list-style:none;
+			display:block;
+			padding-bottom:8px;
+	}
+nav#menu-ml ul li a{
+			color:#CCC;
+			font-size:18pt;
+			text-decoration:none;
+			font-family: 'Fjalla One', sans-serif;
+			padding-bottom:20px;
+			transition:color 0.5s;
+			transition:text-shadow 0.5s;
+	}
+nav#menu-ml ul li a:hover{
+			color:#449a70;
+			text-shadow:1px 1px 4px rgba(0,153,0,0.5);
+	}
+	
+/*Teste*/
+div#teste {
+		height:480px;
+		width:950px;
+		background-color:#fff;
+		border-radius:20px;
+		}
+
+
 
