@@ -1,16 +1,43 @@
+<!DOCTYPE html PUBLIC>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title> Null </title>
 </head>
 
-<frameset cols="335,*" border="0" framespacing="0">
-<frame src="menu-lateral.html" name="lateral" noresize scrolling="no" frameborder="no">
+<style>
+#superior{
+position: absolute;
+top: 0;
+left: 31%;
+height: 30%;
+width: 69%;
+border: 0;
+}
+#lateral{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 31%;
+border: 0;
+}
+#conteudo{
+position: absolute;
+top: 30%;
+left: 31%;
+border: 0;
+height: 70%;
+width: 69%;
+}
+</style>
 
-<frameset rows="175,*">
-<frame src="menu-superior.html" name="superior" noresize scrolling="no" frameborder="no">
-<frame src="placeholder.html" name="conteudo"  scrolling="no" frameborder="no">
+<body>
 
-</frameset>
-</frameset><noframes></noframes>
+<iframe id="conteudo" name="conteudo" src="placeholder.html"></iframe>
+<iframe id="superior" name="superior" src="menu-superior.html"></iframe>
+<iframe id="lateral" name="lateral" src="menu-lateral.html"></iframe>
+
+</body>
 
 </html>
