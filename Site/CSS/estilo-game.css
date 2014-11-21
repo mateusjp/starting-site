@@ -30,7 +30,7 @@ nav#menu-ms ul li a{
 	margin-bottom:1px;
 	}
 nav#menu-ms ul li a:hover{
-	text-shadow:1px 1px 3px rgba(153,153,153,0.5);
+	text-shadow:1px 1px 3px rgba(0,153,0,0.5);
 	color:#449a70;
 	}
 figure img#icone{
@@ -218,6 +218,9 @@ div#botao a{
 	text-decoration:none;
 	color:#FFF
 	}
+/*Marketing*/
+
+.marketing{}
 
 
 
