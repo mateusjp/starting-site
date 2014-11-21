@@ -5,7 +5,7 @@
 	mysql_select_db('sistema') or die(mysql_error());
 	
 	if(isset($_SESSION['userLog'])){
-		echo '<script type="text/javascript">window.top.location.href = "main.html?class=' . $_GET['classid'] . '"; </script>';
+		echo '<script type="text/javascript">window.top.location.href = "main.html"; </script>';
 		die();
 	}
 	

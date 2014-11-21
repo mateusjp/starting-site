@@ -47,7 +47,7 @@
 				}
 				
 				if(isset($_SESSION['userLog']))
-					echo '<script type="text/javascript">window.top.location.href = "main.html?class=' . $_GET['classid'] . '"; </script>';
+					echo '<script type="text/javascript">window.top.location.href = "main.html"; </script>';
 				else
 					echo 'Desculpe, ocorreu um erro...';
 					

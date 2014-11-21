@@ -6,7 +6,7 @@
 	mysql_select_db('sistema') or die(mysql_error());
 	
 	if(!isset($_SESSION['userLog'])){
-		echo '<script type="text/javascript">window.top.location.href = "login.php?class=' . $_GET['classid'] . '"; </script>';
+		echo '<script type="text/javascript">window.top.location.href = "login.php"; </script>';
 		die();
 	}
 	
@@ -18,7 +18,7 @@
 	if(mysql_num_rows($query) <= 0){
 		unset($_SESSION['userLog'], $_SESSION['userInfo']);
 		session_destroy();
-		echo '<script type="text/javascript">window.top.location.href = "login.php?class=' . $_GET['classid'] . '"; </script>';
+		echo '<script type="text/javascript">window.top.location.href = "login.php"; </script>';
 		die();
 	}
 	$infoUser = mysql_fetch_assoc($query);
@@ -26,7 +26,7 @@
 	if(isset($_GET['acao']) && $_GET['acao'] == 'sair'){
 		unset($_SESSION['userLog'], $_SESSION['userInfo']);
 		session_destroy();
-		echo '<script type="text/javascript">window.top.location.href = "login.php?class=' . $_GET['classid'] . '"; </script>';
+		echo '<script type="text/javascript">window.top.location.href = "login.php"; </script>';
 		die();
 	}
 	
