@@ -175,14 +175,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009e51', end
 	border: 1px solid #093;
 	color: #FFF;
 	box-shadow:0px 0px 10px #bfdcce;
-	transition:opacity 0.5s;
 	border-radius:12px;
 }
+div#botao:hover{
+	background:#063;
+	}
 /* Mensagens*/
 input.buscar{
 	margin:10px 10px 10px 0px;
 	width:170px;
-	height:28px;
+	height:15px;
 	border:1px solid #aeaeae;
 	border-radius:3px;
 	box-shadow:0px 0px 3px #CCC;
@@ -227,9 +229,6 @@ form#mensagens #botao{
 	margin-left: 45px;
 	float: left;
 	}
-div#botao:hover{
-	opacity:0.8;
-	}
 div#botao a{
 	text-decoration:none;
 	color:#FFF
@@ -260,7 +259,7 @@ div#botao a{
 	margin-right:15px;
 	}
 /*Banco*/
-form#emprestimo{
+form.banco{
 	float:left;
 	margin:20px 20px 0px 100px;
 	border:3px solid rgba(0,102,0,0.5);
@@ -282,14 +281,18 @@ select#seletor{
 select#seletor:hover{
 	box-shadow:0px 0px 6px #999;
 	}
-form#emprestimo #botao{
+form.banco #botao{
 	margin:0px 0px 10px 12px;
+	float:left;
 	}
-form#emprestimo p{
+form.banco p{
 	margin-top:10px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:8pt;
 	text-align:center;
+	}
+form.banco span{
+	margin:5px;
 	}
 /*Ranking*/
 form#ranking{
