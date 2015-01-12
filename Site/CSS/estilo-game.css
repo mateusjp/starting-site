@@ -68,6 +68,7 @@ figure#carregar-foto figcaption{
 			transition:opacity 1s;
 	}
 figure#carregar-foto:hover figcaption{
+			font-family:Arial, Helvetica, sans-serif;
 			opacity:1;
 	}
 figure#carregar-foto figcaption a{
@@ -123,7 +124,7 @@ iframe[scrolling='no']{
 #conteudo{
 	position: absolute;
 	top: 90px;
-	left: 204px;
+	left: 171px;
 	border: 0;
 	height: 590px;
 	width: 1150px;
@@ -236,13 +237,23 @@ div#botao a{
 /*Marketing*/
 
 .marketing{
-	width:220px;
-	height:350px;
+	width:120px;
+	height:120px;
+	background-color:#FFF;
 	border:3px solid rgba(0,102,0,0.5);
 	border-radius:5px;
-	margin:15px 0px 0px 70px;
+	margin:110px 0px 0px 140px;
 	float:left;
+	overflow:hidden;
+	-webkit-transition:all .4s;
 	}
+.marketing:hover {
+	width:220px;
+	height:330px;
+	background-color:rgba(204,204,204,0.2);
+	box-shadow:4px 4px 10px #333;
+	margin:60px 0px 0px 80px;
+		}
 .marketing p{
 	margin-top:20px;
 	font-family:Arial, Helvetica, sans-serif;
@@ -259,40 +270,27 @@ div#botao a{
 	margin-right:15px;
 	}
 /*Banco*/
-form.banco{
+#botoesbanco {
 	float:left;
-	margin:20px 20px 0px 100px;
+	height:auto;
+	width:600px;
+	}
+.banco {
+	width:120px;
+	height:120px;
+	background-color:#FFF;
 	border:3px solid rgba(0,102,0,0.5);
 	border-radius:5px;
-	padding:15px;
+	margin:50px 0px 0px 140px;
+	overflow:hidden;
+	-webkit-transition:all .4s;
 	}
-select#seletor{
-	margin:10px 10px 10px 0px;
-	width:170px;
-	height:28px;
-	border:1px solid #aeaeae;
-	border-radius:3px;
-	box-shadow:0px 0px 3px #CCC;
-	color:#aeaeae;
-	padding:5px;
-	transition:box-shadow 1s;
-	outline:none;
-	}
-select#seletor:hover{
-	box-shadow:0px 0px 6px #999;
-	}
-form.banco #botao{
-	margin:0px 0px 10px 12px;
-	float:left;
-	}
-form.banco p{
-	margin-top:10px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:8pt;
-	text-align:center;
-	}
-form.banco span{
-	margin:5px;
+#framebanco{
+	margin:10px;
+	overflow:hidden;
+	height:400px;
+	width:260px;
+	border:none;
 	}
 /*Ranking*/
 form#ranking{
@@ -310,52 +308,5 @@ form#ranking span{
 table#lista-jogadores{
 	margin:70px auto 0px auto;
 	}
-/*Produtos*/
 
-form#produtos{
-	width:800px;
-	height:auto;
-	margin:20px auto 80px auto;
-	border:3px solid rgba(0,102,0,0.5);
-	border-radius:5px;
-	}
-form#produtos #botao{
-	position: absolute;
-	float:right;
-	margin:-39px 0px 0px 680px;
-}
-form#produtos span{
-	margin:10px 5px 25px 40px;
-}
-table#lista-produtos{
-	margin:70px auto 0px auto;
-}
-form#venda-item{
-	width:800px;
-	height:auto;
-	margin:20px auto 50px auto;
-	border:3px solid rgba(0,102,0,0.5);
-	border-radius:5px;
-	}
-.vender{
-	height:15px;
-	width:50px;
-	border-radius:3px;
-	box-shadow:0px 0px 3px #CCC;
-	color:#aeaeae;
-	padding:5px;
-	outline:none;
-	border:1px solid #aeaeae;
-	transition:box-shadow 1s;
-	}
-.vender:hover{
-	box-shadow:0px 0px 6px #999;
-	}
-form#venda-item span{
-	margin:10px 5px 25px 40px;
-	}
-form#venda-item #botao{
-	position: absolute;
-	float:right;
-	margin:-39px 0px 0px 680px;
-}
+
