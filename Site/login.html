@@ -1,3 +1,26 @@
+<?php
+	session_start();
+	
+	mysql_connect('localhost', 'root', '') or die(mysql_error());
+	mysql_select_db('sistema') or die(mysql_error());
+	
+	if(isset($_SESSION['userLog'])){
+		echo '<script type="text/javascript">window.top.location.href = "main.html"; </script>';
+		die();
+	}
+	
+	if(isset($_COOKIE['lembrar'])){
+		
+		$lembrar 	= "checked";
+		$login		= base64_decode($_COOKIE['lembrar-login']);
+		$senha		= base64_decode($_COOKIE['lembrar-senha']);
+		
+	}else{
+		$lembrar 	= null;
+		$login		= null;
+		$senha		= null;
+	}
+?>
 <!DOCTYPE html PUBLIC>
 <html>
 <head>
@@ -21,18 +44,19 @@
 <div id="login-box">
   <div id="login-box-int">
     <div id="box-label">Entrar</div>
-  	 <form>
-     <p>Login</p>
-       <input class="input-box" type="text" maxlength="32" />
-	<p>Senha</p>
-       <input class="input-box" type="password" maxlength="32" />
-    <div id="botoes">
-    <div id="botao-lembrar"><input type="checkbox"/> Lembrar senha</div>
-    <div id="registro">Não tem conta? <a href="#">Registre-se</a></div>
-    <div id="botao"><a href="main.html">Entrar</a></div>
+  	 <form action="php/login.php" method="post">
+     		<p>Login</p>
+       		<input class="input-box" type="text" maxlength="32" name="login" />
+		<p>Senha</p>
+       		<input class="input-box" type="password" maxlength="32" name="senha" />
+    		<div id="botoes">
+    			<div id="botao-lembrar">
+    				<input type="checkbox" name="lembrar" <?php echo $lembrar; ?>> Lembrar senha</div>
+    			<div id="registro">Não tem conta? <a href="#">Registre-se</a></div>
+    				<input type="submit" name="logon" value="Entrar" id="botao">
  
-    </div> 
-  </div>
+    		</div> 
+  	</div>
      </form>  
     </div> 
   </div>
